@@ -7,8 +7,15 @@
 //
 
 #import "NoteListViewController.h"
+#import "GKConstants.h"
+#import "GKNote.h"
+#import "GKNoteManager.h"
+#import "NoteListCell.h"
+#import "NoteDetailViewController.h"
 
 @interface NoteListViewController ()
+
+@property(nonatomic,strong) NSMutableArray *dataSource;
 
 @end
 
@@ -17,6 +24,108 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    [self setupNavigationBar];
+    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(loadData) name:kNotificationCreateFile object:nil];
+}
+
+-(void)dealloc
+{
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
+
+-(void)setupNavigationBar
+{
+    UIBarButtonItem *item = [[UIBarButtonItem alloc]initWithImage:[UIImage imageNamed:@"ic_add_tab"] style:UIBarButtonItemStylePlain target:self action:@selector(createTask)];
+    self.navigationItem.rightBarButtonItem = item;
+    self.navigationItem.title = kAppName;
+}
+
+-(void)loadData
+{
+    _dataSource = [[GKNoteManager sharedManager] readAllNotes];
+    [self.tableView reloadData];
+}
+
+-(void)createTask
+{
+    NoteDetailViewController *controller = [[NoteDetailViewController alloc]init];
+    [self.navigationController pushViewController:controller animated:YES];
+    
+}
+
+-(NSMutableArray *)dataSource
+{
+    if(!_dataSource){
+        _dataSource = [[GKNoteManager sharedManager] readAllNotes];
+    }
+    
+    return _dataSource;
+}
+
+-(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    return 1;
+}
+
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    GKNote *note = [self.dataSource objectAtIndex:indexPath.row];
+    return [NoteListCell heightWithNote:note];
+}
+
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return self.dataSource.count;
+}
+
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    NoteListCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ListCell"];
+    
+    if(!cell)
+    {
+        cell = [[NoteListCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"ListCell"];
+    }
+    
+    
+    GKNote *note = [self.dataSource objectAtIndex:indexPath.row];
+    [cell updateWithNote:note];
+    return cell;
+}
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [tableView deselectRowAtIndexPath:indexPath animated:NO];
+    GKNote *note = [self.dataSource objectAtIndex:indexPath.row];
+
+    NoteDetailViewController *controller = [[NoteDetailViewController alloc]initWithNote:note];
+    controller.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:controller animated:YES];
+}
+
+-(BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return YES;
+}
+
+-(UITableViewCellEditingStyle)tableView:(UITableView *)tableView editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return UITableViewCellEditingStyleDelete;
+}
+
+-(void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if(editingStyle == UITableViewCellEditingStyleDelete)
+    {
+        GKNote *note = [self.dataSource objectAtIndex:indexPath.row];
+        [[GKNoteManager sharedManager] deleteNote:note];
+        
+        [self.dataSource removeObjectAtIndex:indexPath.row];
+        [self.tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
+    }
 }
 
 - (void)didReceiveMemoryWarning {

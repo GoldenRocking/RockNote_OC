@@ -19,6 +19,15 @@
 		ECB2B51C1E69695800EAE841 /* GKConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = ECB2B51B1E69695800EAE841 /* GKConstants.m */; };
 		ECB2B5211E69707800EAE841 /* GKNote.m in Sources */ = {isa = PBXBuildFile; fileRef = ECB2B5201E69707800EAE841 /* GKNote.m */; };
 		ECB2B5241E6978C500EAE841 /* GKNoteManager.m in Sources */ = {isa = PBXBuildFile; fileRef = ECB2B5231E6978C500EAE841 /* GKNoteManager.m */; };
+		ECB2B5271E6CFB0A00EAE841 /* ic_add_tab@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ECB2B5261E6CFB0A00EAE841 /* ic_add_tab@2x.png */; };
+		ECB2B52C1E6CFB1700EAE841 /* micro_small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ECB2B5281E6CFB1700EAE841 /* micro_small@2x.png */; };
+		ECB2B52D1E6CFB1700EAE841 /* edit_image-50@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ECB2B5291E6CFB1700EAE841 /* edit_image-50@2x.png */; };
+		ECB2B52E1E6CFB1700EAE841 /* micro@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ECB2B52A1E6CFB1700EAE841 /* micro@2x.png */; };
+		ECB2B52F1E6CFB1700EAE841 /* save@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ECB2B52B1E6CFB1700EAE841 /* save@2x.png */; };
+		ECB2B5321E6CFB2400EAE841 /* edit_file@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ECB2B5301E6CFB2400EAE841 /* edit_file@2x.png */; };
+		ECB2B5331E6CFB2400EAE841 /* ic_more_white@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ECB2B5311E6CFB2400EAE841 /* ic_more_white@2x.png */; };
+		ECB2B5361E6CFE3900EAE841 /* NoteListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ECB2B5351E6CFE3900EAE841 /* NoteListCell.m */; };
+		ECB2B5391E6D393E00EAE841 /* NoteDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECB2B5381E6D393E00EAE841 /* NoteDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +53,17 @@
 		ECB2B5201E69707800EAE841 /* GKNote.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKNote.m; sourceTree = "<group>"; };
 		ECB2B5221E6978C500EAE841 /* GKNoteManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKNoteManager.h; sourceTree = "<group>"; };
 		ECB2B5231E6978C500EAE841 /* GKNoteManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKNoteManager.m; sourceTree = "<group>"; };
+		ECB2B5261E6CFB0A00EAE841 /* ic_add_tab@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_add_tab@2x.png"; sourceTree = "<group>"; };
+		ECB2B5281E6CFB1700EAE841 /* micro_small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "micro_small@2x.png"; sourceTree = "<group>"; };
+		ECB2B5291E6CFB1700EAE841 /* edit_image-50@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "edit_image-50@2x.png"; sourceTree = "<group>"; };
+		ECB2B52A1E6CFB1700EAE841 /* micro@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "micro@2x.png"; sourceTree = "<group>"; };
+		ECB2B52B1E6CFB1700EAE841 /* save@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "save@2x.png"; sourceTree = "<group>"; };
+		ECB2B5301E6CFB2400EAE841 /* edit_file@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "edit_file@2x.png"; sourceTree = "<group>"; };
+		ECB2B5311E6CFB2400EAE841 /* ic_more_white@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_more_white@2x.png"; sourceTree = "<group>"; };
+		ECB2B5341E6CFE3900EAE841 /* NoteListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoteListCell.h; sourceTree = "<group>"; };
+		ECB2B5351E6CFE3900EAE841 /* NoteListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoteListCell.m; sourceTree = "<group>"; };
+		ECB2B5371E6D393E00EAE841 /* NoteDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoteDetailViewController.h; sourceTree = "<group>"; };
+		ECB2B5381E6D393E00EAE841 /* NoteDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoteDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +96,7 @@
 		ECB2B4F21E695D9400EAE841 /* RockyNote */ = {
 			isa = PBXGroup;
 			children = (
+				ECB2B5251E6CFAFC00EAE841 /* images */,
 				ECB2B51E1E69706000EAE841 /* Model */,
 				ECB2B5101E69613000EAE841 /* Tools */,
 				ECB2B50C1E69608F00EAE841 /* Controller */,
@@ -107,6 +128,10 @@
 			children = (
 				ECB2B50D1E6960A700EAE841 /* NoteListViewController.h */,
 				ECB2B50E1E6960A700EAE841 /* NoteListViewController.m */,
+				ECB2B5341E6CFE3900EAE841 /* NoteListCell.h */,
+				ECB2B5351E6CFE3900EAE841 /* NoteListCell.m */,
+				ECB2B5371E6D393E00EAE841 /* NoteDetailViewController.h */,
+				ECB2B5381E6D393E00EAE841 /* NoteDetailViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -131,6 +156,20 @@
 				ECB2B5231E6978C500EAE841 /* GKNoteManager.m */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		ECB2B5251E6CFAFC00EAE841 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				ECB2B5281E6CFB1700EAE841 /* micro_small@2x.png */,
+				ECB2B5291E6CFB1700EAE841 /* edit_image-50@2x.png */,
+				ECB2B52A1E6CFB1700EAE841 /* micro@2x.png */,
+				ECB2B52B1E6CFB1700EAE841 /* save@2x.png */,
+				ECB2B5261E6CFB0A00EAE841 /* ic_add_tab@2x.png */,
+				ECB2B5301E6CFB2400EAE841 /* edit_file@2x.png */,
+				ECB2B5311E6CFB2400EAE841 /* ic_more_white@2x.png */,
+			);
+			name = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,8 +232,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				ECB2B5031E695D9400EAE841 /* LaunchScreen.storyboard in Resources */,
+				ECB2B52F1E6CFB1700EAE841 /* save@2x.png in Resources */,
+				ECB2B52D1E6CFB1700EAE841 /* edit_image-50@2x.png in Resources */,
+				ECB2B5271E6CFB0A00EAE841 /* ic_add_tab@2x.png in Resources */,
+				ECB2B52E1E6CFB1700EAE841 /* micro@2x.png in Resources */,
+				ECB2B5331E6CFB2400EAE841 /* ic_more_white@2x.png in Resources */,
 				ECB2B50B1E695DF900EAE841 /* Images.xcassets in Resources */,
+				ECB2B52C1E6CFB1700EAE841 /* micro_small@2x.png in Resources */,
 				ECB2B5001E695D9400EAE841 /* Assets.xcassets in Resources */,
+				ECB2B5321E6CFB2400EAE841 /* edit_file@2x.png in Resources */,
 				ECB2B4FE1E695D9400EAE841 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -211,8 +257,10 @@
 				ECB2B4F81E695D9400EAE841 /* AppDelegate.m in Sources */,
 				ECB2B4F51E695D9400EAE841 /* main.m in Sources */,
 				ECB2B5211E69707800EAE841 /* GKNote.m in Sources */,
+				ECB2B5391E6D393E00EAE841 /* NoteDetailViewController.m in Sources */,
 				ECB2B5241E6978C500EAE841 /* GKNoteManager.m in Sources */,
 				ECB2B5131E69623E00EAE841 /* UIColor+GKHex.m in Sources */,
+				ECB2B5361E6CFE3900EAE841 /* NoteListCell.m in Sources */,
 				ECB2B51C1E69695800EAE841 /* GKConstants.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -376,6 +424,7 @@
 				ECB2B5091E695D9400EAE841 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

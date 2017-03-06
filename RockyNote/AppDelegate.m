@@ -10,6 +10,8 @@
 #import "NoteListViewController.h"
 #import "UIColor+GKHex.h"
 #import "GKConstants.h"
+#import "GKNote.h"
+#import "GKNoteManager.h"
 
 @interface AppDelegate ()
 
@@ -20,7 +22,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    
+    [self addInitFileIfNeed];
     NoteListViewController *controller = [[NoteListViewController alloc]init];
     UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:controller];
     
@@ -35,6 +37,19 @@
     self.window.rootViewController = nav;
     [self.window makeKeyAndVisible];
     return YES;
+}
+
+-(void)addInitFileIfNeed
+{
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    if(![defaults objectForKey:@"hasInitFile"])
+    {
+        GKNote *note = [[GKNote alloc]initWithTitle:AboutTitle content:AboutText createdDate:[NSDate date] updateDate:[NSDate date]];
+        [[GKNoteManager sharedManager] storeNote:note];
+        [defaults setBool:YES forKey:@"hasInitFile"];
+        [defaults synchronize];
+        
+    }
 }
 
 

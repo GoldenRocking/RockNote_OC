@@ -7,6 +7,7 @@
 //
 
 #import "GKNote.h"
+#import "GKNoteManager.h"
 
 #define kNoteIDKey     @"NoteID"
 #define kTitleKey      @"Title"
@@ -15,7 +16,7 @@
 #define kUpdatedDate   @"UpdatedDate"
 
 @implementation GKNote
-@synthesize noteID = _noteID;
+//@synthesize noteID = _noteID;
 
 -(id)initWithTitle:(NSString *)title content:(NSString *)content createdDate:(NSDate *)createdDate updateDate:(NSDate *)updatedDate
 {
@@ -70,7 +71,7 @@
 
 -(BOOL)Persistence
 {
-    return false;
+    return [[GKNoteManager sharedManager] storeNote:self];
 }
 
 @end
