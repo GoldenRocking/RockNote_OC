@@ -1,0 +1,383 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ECB2B4F51E695D9400EAE841 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ECB2B4F41E695D9400EAE841 /* main.m */; };
+		ECB2B4F81E695D9400EAE841 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ECB2B4F71E695D9400EAE841 /* AppDelegate.m */; };
+		ECB2B4FB1E695D9400EAE841 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECB2B4FA1E695D9400EAE841 /* ViewController.m */; };
+		ECB2B4FE1E695D9400EAE841 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECB2B4FC1E695D9400EAE841 /* Main.storyboard */; };
+		ECB2B5001E695D9400EAE841 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECB2B4FF1E695D9400EAE841 /* Assets.xcassets */; };
+		ECB2B5031E695D9400EAE841 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECB2B5011E695D9400EAE841 /* LaunchScreen.storyboard */; };
+		ECB2B50B1E695DF900EAE841 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECB2B50A1E695DF900EAE841 /* Images.xcassets */; };
+		ECB2B50F1E6960A700EAE841 /* NoteListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECB2B50E1E6960A700EAE841 /* NoteListViewController.m */; };
+		ECB2B5131E69623E00EAE841 /* UIColor+GKHex.m in Sources */ = {isa = PBXBuildFile; fileRef = ECB2B5121E69623E00EAE841 /* UIColor+GKHex.m */; };
+		ECB2B51C1E69695800EAE841 /* GKConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = ECB2B51B1E69695800EAE841 /* GKConstants.m */; };
+		ECB2B5211E69707800EAE841 /* GKNote.m in Sources */ = {isa = PBXBuildFile; fileRef = ECB2B5201E69707800EAE841 /* GKNote.m */; };
+		ECB2B5241E6978C500EAE841 /* GKNoteManager.m in Sources */ = {isa = PBXBuildFile; fileRef = ECB2B5231E6978C500EAE841 /* GKNoteManager.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		ECB2B4F01E695D9400EAE841 /* RockyNote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RockyNote.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECB2B4F41E695D9400EAE841 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		ECB2B4F61E695D9400EAE841 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		ECB2B4F71E695D9400EAE841 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		ECB2B4F91E695D9400EAE841 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		ECB2B4FA1E695D9400EAE841 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		ECB2B4FD1E695D9400EAE841 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		ECB2B4FF1E695D9400EAE841 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ECB2B5021E695D9400EAE841 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		ECB2B5041E695D9400EAE841 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECB2B50A1E695DF900EAE841 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		ECB2B50D1E6960A700EAE841 /* NoteListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoteListViewController.h; sourceTree = "<group>"; };
+		ECB2B50E1E6960A700EAE841 /* NoteListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoteListViewController.m; sourceTree = "<group>"; };
+		ECB2B5111E69623E00EAE841 /* UIColor+GKHex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+GKHex.h"; sourceTree = "<group>"; };
+		ECB2B5121E69623E00EAE841 /* UIColor+GKHex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+GKHex.m"; sourceTree = "<group>"; };
+		ECB2B51A1E69695800EAE841 /* GKConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKConstants.h; sourceTree = "<group>"; };
+		ECB2B51B1E69695800EAE841 /* GKConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKConstants.m; sourceTree = "<group>"; };
+		ECB2B51D1E6969B500EAE841 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		ECB2B51F1E69707800EAE841 /* GKNote.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKNote.h; sourceTree = "<group>"; };
+		ECB2B5201E69707800EAE841 /* GKNote.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKNote.m; sourceTree = "<group>"; };
+		ECB2B5221E6978C500EAE841 /* GKNoteManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKNoteManager.h; sourceTree = "<group>"; };
+		ECB2B5231E6978C500EAE841 /* GKNoteManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKNoteManager.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ECB2B4ED1E695D9400EAE841 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ECB2B4E71E695D9400EAE841 = {
+			isa = PBXGroup;
+			children = (
+				ECB2B4F21E695D9400EAE841 /* RockyNote */,
+				ECB2B4F11E695D9400EAE841 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ECB2B4F11E695D9400EAE841 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ECB2B4F01E695D9400EAE841 /* RockyNote.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ECB2B4F21E695D9400EAE841 /* RockyNote */ = {
+			isa = PBXGroup;
+			children = (
+				ECB2B51E1E69706000EAE841 /* Model */,
+				ECB2B5101E69613000EAE841 /* Tools */,
+				ECB2B50C1E69608F00EAE841 /* Controller */,
+				ECB2B4F61E695D9400EAE841 /* AppDelegate.h */,
+				ECB2B4F71E695D9400EAE841 /* AppDelegate.m */,
+				ECB2B4F91E695D9400EAE841 /* ViewController.h */,
+				ECB2B4FA1E695D9400EAE841 /* ViewController.m */,
+				ECB2B4FC1E695D9400EAE841 /* Main.storyboard */,
+				ECB2B4FF1E695D9400EAE841 /* Assets.xcassets */,
+				ECB2B5011E695D9400EAE841 /* LaunchScreen.storyboard */,
+				ECB2B5041E695D9400EAE841 /* Info.plist */,
+				ECB2B50A1E695DF900EAE841 /* Images.xcassets */,
+				ECB2B4F31E695D9400EAE841 /* Supporting Files */,
+			);
+			path = RockyNote;
+			sourceTree = "<group>";
+		};
+		ECB2B4F31E695D9400EAE841 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				ECB2B4F41E695D9400EAE841 /* main.m */,
+				ECB2B51D1E6969B500EAE841 /* PrefixHeader.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		ECB2B50C1E69608F00EAE841 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				ECB2B50D1E6960A700EAE841 /* NoteListViewController.h */,
+				ECB2B50E1E6960A700EAE841 /* NoteListViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		ECB2B5101E69613000EAE841 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				ECB2B51A1E69695800EAE841 /* GKConstants.h */,
+				ECB2B51B1E69695800EAE841 /* GKConstants.m */,
+				ECB2B5111E69623E00EAE841 /* UIColor+GKHex.h */,
+				ECB2B5121E69623E00EAE841 /* UIColor+GKHex.m */,
+			);
+			name = Tools;
+			sourceTree = "<group>";
+		};
+		ECB2B51E1E69706000EAE841 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				ECB2B51F1E69707800EAE841 /* GKNote.h */,
+				ECB2B5201E69707800EAE841 /* GKNote.m */,
+				ECB2B5221E6978C500EAE841 /* GKNoteManager.h */,
+				ECB2B5231E6978C500EAE841 /* GKNoteManager.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ECB2B4EF1E695D9400EAE841 /* RockyNote */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ECB2B5071E695D9400EAE841 /* Build configuration list for PBXNativeTarget "RockyNote" */;
+			buildPhases = (
+				ECB2B4EC1E695D9400EAE841 /* Sources */,
+				ECB2B4ED1E695D9400EAE841 /* Frameworks */,
+				ECB2B4EE1E695D9400EAE841 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RockyNote;
+			productName = RockyNote;
+			productReference = ECB2B4F01E695D9400EAE841 /* RockyNote.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ECB2B4E81E695D9400EAE841 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = xhhl;
+				TargetAttributes = {
+					ECB2B4EF1E695D9400EAE841 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 8CEF2A8UUW;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = ECB2B4EB1E695D9400EAE841 /* Build configuration list for PBXProject "RockyNote" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ECB2B4E71E695D9400EAE841;
+			productRefGroup = ECB2B4F11E695D9400EAE841 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ECB2B4EF1E695D9400EAE841 /* RockyNote */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ECB2B4EE1E695D9400EAE841 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECB2B5031E695D9400EAE841 /* LaunchScreen.storyboard in Resources */,
+				ECB2B50B1E695DF900EAE841 /* Images.xcassets in Resources */,
+				ECB2B5001E695D9400EAE841 /* Assets.xcassets in Resources */,
+				ECB2B4FE1E695D9400EAE841 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ECB2B4EC1E695D9400EAE841 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECB2B50F1E6960A700EAE841 /* NoteListViewController.m in Sources */,
+				ECB2B4FB1E695D9400EAE841 /* ViewController.m in Sources */,
+				ECB2B4F81E695D9400EAE841 /* AppDelegate.m in Sources */,
+				ECB2B4F51E695D9400EAE841 /* main.m in Sources */,
+				ECB2B5211E69707800EAE841 /* GKNote.m in Sources */,
+				ECB2B5241E6978C500EAE841 /* GKNoteManager.m in Sources */,
+				ECB2B5131E69623E00EAE841 /* UIColor+GKHex.m in Sources */,
+				ECB2B51C1E69695800EAE841 /* GKConstants.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		ECB2B4FC1E695D9400EAE841 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ECB2B4FD1E695D9400EAE841 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		ECB2B5011E695D9400EAE841 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ECB2B5021E695D9400EAE841 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ECB2B5051E695D9400EAE841 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		ECB2B5061E695D9400EAE841 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ECB2B5081E695D9400EAE841 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = 8CEF2A8UUW;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/PrefixHeader.pch";
+				INFOPLIST_FILE = RockyNote/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xhhl.RockyNote;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		ECB2B5091E695D9400EAE841 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = 8CEF2A8UUW;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/PrefixHeader.pch";
+				INFOPLIST_FILE = RockyNote/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xhhl.RockyNote;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ECB2B4EB1E695D9400EAE841 /* Build configuration list for PBXProject "RockyNote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECB2B5051E695D9400EAE841 /* Debug */,
+				ECB2B5061E695D9400EAE841 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ECB2B5071E695D9400EAE841 /* Build configuration list for PBXNativeTarget "RockyNote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECB2B5081E695D9400EAE841 /* Debug */,
+				ECB2B5091E695D9400EAE841 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ECB2B4E81E695D9400EAE841 /* Project object */;
+}
