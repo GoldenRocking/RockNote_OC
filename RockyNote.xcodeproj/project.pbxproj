@@ -28,6 +28,14 @@
 		ECB2B5331E6CFB2400EAE841 /* ic_more_white@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ECB2B5311E6CFB2400EAE841 /* ic_more_white@2x.png */; };
 		ECB2B5361E6CFE3900EAE841 /* NoteListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ECB2B5351E6CFE3900EAE841 /* NoteListCell.m */; };
 		ECB2B5391E6D393E00EAE841 /* NoteDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECB2B5381E6D393E00EAE841 /* NoteDetailViewController.m */; };
+		ECB2B55B1E6E8E0600EAE841 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = ECB2B5501E6E8E0600EAE841 /* FMDatabase.m */; };
+		ECB2B55C1E6E8E0600EAE841 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = ECB2B5521E6E8E0600EAE841 /* FMDatabaseAdditions.m */; };
+		ECB2B55D1E6E8E0600EAE841 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = ECB2B5541E6E8E0600EAE841 /* FMDatabasePool.m */; };
+		ECB2B55E1E6E8E0600EAE841 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = ECB2B5561E6E8E0600EAE841 /* FMDatabaseQueue.m */; };
+		ECB2B55F1E6E8E0600EAE841 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = ECB2B5591E6E8E0600EAE841 /* FMResultSet.m */; };
+		ECB2B5601E6E8E0600EAE841 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ECB2B55A1E6E8E0600EAE841 /* Info.plist */; };
+		ECB2B5631E6E8E2000EAE841 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = ECB2B5621E6E8E2000EAE841 /* libsqlite3.0.tbd */; };
+		ECB2B5661E6E914E00EAE841 /* GKNoteDBM.m in Sources */ = {isa = PBXBuildFile; fileRef = ECB2B5651E6E914E00EAE841 /* GKNoteDBM.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +72,21 @@
 		ECB2B5351E6CFE3900EAE841 /* NoteListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoteListCell.m; sourceTree = "<group>"; };
 		ECB2B5371E6D393E00EAE841 /* NoteDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoteDetailViewController.h; sourceTree = "<group>"; };
 		ECB2B5381E6D393E00EAE841 /* NoteDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoteDetailViewController.m; sourceTree = "<group>"; };
+		ECB2B54F1E6E8E0600EAE841 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		ECB2B5501E6E8E0600EAE841 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		ECB2B5511E6E8E0600EAE841 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		ECB2B5521E6E8E0600EAE841 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		ECB2B5531E6E8E0600EAE841 /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		ECB2B5541E6E8E0600EAE841 /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		ECB2B5551E6E8E0600EAE841 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		ECB2B5561E6E8E0600EAE841 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		ECB2B5571E6E8E0600EAE841 /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
+		ECB2B5581E6E8E0600EAE841 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		ECB2B5591E6E8E0600EAE841 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		ECB2B55A1E6E8E0600EAE841 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECB2B5621E6E8E2000EAE841 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		ECB2B5641E6E914E00EAE841 /* GKNoteDBM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKNoteDBM.h; sourceTree = "<group>"; };
+		ECB2B5651E6E914E00EAE841 /* GKNoteDBM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKNoteDBM.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECB2B5631E6E8E2000EAE841 /* libsqlite3.0.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,6 +106,7 @@
 			children = (
 				ECB2B4F21E695D9400EAE841 /* RockyNote */,
 				ECB2B4F11E695D9400EAE841 /* Products */,
+				ECB2B5611E6E8E2000EAE841 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,6 +121,7 @@
 		ECB2B4F21E695D9400EAE841 /* RockyNote */ = {
 			isa = PBXGroup;
 			children = (
+				ECB2B54D1E6E8DF600EAE841 /* libs */,
 				ECB2B5251E6CFAFC00EAE841 /* images */,
 				ECB2B51E1E69706000EAE841 /* Model */,
 				ECB2B5101E69613000EAE841 /* Tools */,
@@ -154,6 +180,8 @@
 				ECB2B5201E69707800EAE841 /* GKNote.m */,
 				ECB2B5221E6978C500EAE841 /* GKNoteManager.h */,
 				ECB2B5231E6978C500EAE841 /* GKNoteManager.m */,
+				ECB2B5641E6E914E00EAE841 /* GKNoteDBM.h */,
+				ECB2B5651E6E914E00EAE841 /* GKNoteDBM.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -170,6 +198,41 @@
 				ECB2B5311E6CFB2400EAE841 /* ic_more_white@2x.png */,
 			);
 			name = images;
+			sourceTree = "<group>";
+		};
+		ECB2B54D1E6E8DF600EAE841 /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				ECB2B54E1E6E8E0600EAE841 /* fmdb */,
+			);
+			name = libs;
+			sourceTree = "<group>";
+		};
+		ECB2B54E1E6E8E0600EAE841 /* fmdb */ = {
+			isa = PBXGroup;
+			children = (
+				ECB2B54F1E6E8E0600EAE841 /* FMDatabase.h */,
+				ECB2B5501E6E8E0600EAE841 /* FMDatabase.m */,
+				ECB2B5511E6E8E0600EAE841 /* FMDatabaseAdditions.h */,
+				ECB2B5521E6E8E0600EAE841 /* FMDatabaseAdditions.m */,
+				ECB2B5531E6E8E0600EAE841 /* FMDatabasePool.h */,
+				ECB2B5541E6E8E0600EAE841 /* FMDatabasePool.m */,
+				ECB2B5551E6E8E0600EAE841 /* FMDatabaseQueue.h */,
+				ECB2B5561E6E8E0600EAE841 /* FMDatabaseQueue.m */,
+				ECB2B5571E6E8E0600EAE841 /* FMDB.h */,
+				ECB2B5581E6E8E0600EAE841 /* FMResultSet.h */,
+				ECB2B5591E6E8E0600EAE841 /* FMResultSet.m */,
+				ECB2B55A1E6E8E0600EAE841 /* Info.plist */,
+			);
+			path = fmdb;
+			sourceTree = "<group>";
+		};
+		ECB2B5611E6E8E2000EAE841 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ECB2B5621E6E8E2000EAE841 /* libsqlite3.0.tbd */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,6 +302,7 @@
 				ECB2B5331E6CFB2400EAE841 /* ic_more_white@2x.png in Resources */,
 				ECB2B50B1E695DF900EAE841 /* Images.xcassets in Resources */,
 				ECB2B52C1E6CFB1700EAE841 /* micro_small@2x.png in Resources */,
+				ECB2B5601E6E8E0600EAE841 /* Info.plist in Resources */,
 				ECB2B5001E695D9400EAE841 /* Assets.xcassets in Resources */,
 				ECB2B5321E6CFB2400EAE841 /* edit_file@2x.png in Resources */,
 				ECB2B4FE1E695D9400EAE841 /* Main.storyboard in Resources */,
@@ -253,15 +317,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				ECB2B50F1E6960A700EAE841 /* NoteListViewController.m in Sources */,
+				ECB2B5661E6E914E00EAE841 /* GKNoteDBM.m in Sources */,
 				ECB2B4FB1E695D9400EAE841 /* ViewController.m in Sources */,
+				ECB2B55D1E6E8E0600EAE841 /* FMDatabasePool.m in Sources */,
+				ECB2B55E1E6E8E0600EAE841 /* FMDatabaseQueue.m in Sources */,
 				ECB2B4F81E695D9400EAE841 /* AppDelegate.m in Sources */,
 				ECB2B4F51E695D9400EAE841 /* main.m in Sources */,
 				ECB2B5211E69707800EAE841 /* GKNote.m in Sources */,
 				ECB2B5391E6D393E00EAE841 /* NoteDetailViewController.m in Sources */,
 				ECB2B5241E6978C500EAE841 /* GKNoteManager.m in Sources */,
+				ECB2B55F1E6E8E0600EAE841 /* FMResultSet.m in Sources */,
 				ECB2B5131E69623E00EAE841 /* UIColor+GKHex.m in Sources */,
 				ECB2B5361E6CFE3900EAE841 /* NoteListCell.m in Sources */,
+				ECB2B55B1E6E8E0600EAE841 /* FMDatabase.m in Sources */,
 				ECB2B51C1E69695800EAE841 /* GKConstants.m in Sources */,
+				ECB2B55C1E6E8E0600EAE841 /* FMDatabaseAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
