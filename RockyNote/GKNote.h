@@ -21,6 +21,4 @@
        createdDate:(NSDate *)createdDate
         updateDate:(NSDate *)updatedDate;
 
--(BOOL)Persistence;
-
 @end

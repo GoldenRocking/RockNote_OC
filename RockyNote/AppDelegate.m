@@ -11,7 +11,8 @@
 #import "UIColor+GKHex.h"
 #import "GKConstants.h"
 #import "GKNote.h"
-#import "GKNoteManager.h"
+//#import "GKNoteManager.h"
+#import "GKNoteDBM.h"
 
 @interface AppDelegate ()
 
@@ -45,7 +46,7 @@
     if(![defaults objectForKey:@"hasInitFile"])
     {
         GKNote *note = [[GKNote alloc]initWithTitle:AboutTitle content:AboutText createdDate:[NSDate date] updateDate:[NSDate date]];
-        [[GKNoteManager sharedManager] storeNote:note];
+        [[GKNoteDBM sharedDataBase] addNewNote:note];
         [defaults setBool:YES forKey:@"hasInitFile"];
         [defaults synchronize];
         

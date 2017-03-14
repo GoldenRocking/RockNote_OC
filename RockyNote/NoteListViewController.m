@@ -9,9 +9,10 @@
 #import "NoteListViewController.h"
 #import "GKConstants.h"
 #import "GKNote.h"
-#import "GKNoteManager.h"
+//#import "GKNoteManager.h"
 #import "NoteListCell.h"
 #import "NoteDetailViewController.h"
+#import "GKNoteDBM.h"
 
 @interface NoteListViewController ()
 
@@ -45,7 +46,7 @@
 
 -(void)loadData
 {
-    _dataSource = [[GKNoteManager sharedManager] readAllNotes];
+    _dataSource = [[GKNoteDBM sharedDataBase] getAllNote];
     [self.tableView reloadData];
 }
 
@@ -59,7 +60,7 @@
 -(NSMutableArray *)dataSource
 {
     if(!_dataSource){
-        _dataSource = [[GKNoteManager sharedManager] readAllNotes];
+        _dataSource = [[GKNoteDBM sharedDataBase] getAllNote];
     }
     
     return _dataSource;
@@ -121,7 +122,7 @@
     if(editingStyle == UITableViewCellEditingStyleDelete)
     {
         GKNote *note = [self.dataSource objectAtIndex:indexPath.row];
-        [[GKNoteManager sharedManager] deleteNote:note];
+        [[GKNoteDBM sharedDataBase] deleteNote:note];
         
         [self.dataSource removeObjectAtIndex:indexPath.row];
         [self.tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];

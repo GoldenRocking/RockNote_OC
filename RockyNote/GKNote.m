@@ -7,7 +7,8 @@
 //
 
 #import "GKNote.h"
-#import "GKNoteManager.h"
+//#import "GKNoteManager.h"
+#import "GKNoteDBM.h"
 
 #define kNoteIDKey     @"NoteID"
 #define kTitleKey      @"Title"
@@ -69,9 +70,5 @@
 }
 
 
--(BOOL)Persistence
-{
-    return [[GKNoteManager sharedManager] storeNote:self];
-}
 
 @end

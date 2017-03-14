@@ -9,6 +9,8 @@
 #import "NoteDetailViewController.h"
 #import "GKConstants.h"
 #import "UIColor+GKHex.h"
+#import "GKNoteDBM.h"
+
 
 static const CGFloat kViewOriginY = 70;
 static const CGFloat kTextFieldHeight = 30;
@@ -194,24 +196,22 @@ static const CGFloat kVoiceButtonWidth = 100;
     
     NSDate *createDate;
     if(_note && _note.createdDate){
-        createDate = _note.createdDate;
+       // createDate = _note.createdDate;
+        _note.content = _contentTextView.text;
+        _note.title = _titleTextField.text;
+        _note.updatedDate = [NSDate date];
+        [[GKNoteDBM sharedDataBase] updateNote:_note];
+        
     }else{
         createDate = [NSDate date];
-    }
-    
-    GKNote *note = [[GKNote alloc] initWithTitle:_titleTextField.text content:_contentTextView.text createdDate:createDate updateDate:[NSDate date]];
-    _note = note;
-    
-    BOOL success = [note Persistence];
-    
-    if(success)
-    {
-        [[NSNotificationCenter defaultCenter] postNotificationName:kNotificationCreateFile object:nil userInfo:nil];
-    }else
-    {
+        GKNote *note = [[GKNote alloc] initWithTitle:_titleTextField.text content:_contentTextView.text createdDate:createDate updateDate:[NSDate date]];
+        _note = note;
         
+        [[GKNoteDBM sharedDataBase] addNewNote:_note];
+    
     }
     
+    [[NSNotificationCenter defaultCenter] postNotificationName:kNotificationCreateFile object:nil userInfo:nil];
     [self.navigationController popViewControllerAnimated:YES];
 }
 

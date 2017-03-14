@@ -34,7 +34,7 @@ static GKNoteDBM *_dbm = nil;
 +(instancetype)sharedDataBase{
     if(_dbm == nil){
         _dbm = [[GKNoteDBM alloc]init];
-        
+        [_dbm initDataBase];
     
     }
     
@@ -71,7 +71,9 @@ static GKNoteDBM *_dbm = nil;
 }
 
 -(void)initDataBase{
-    NSString *docPath = [NSSearchPathForDirectoriesInDomains(NSDocumentationDirectory, NSUserDomainMask, YES) lastObject];
+    NSString *docPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
+    
+    //NSLog(@"%@",docPath);
     
     // 生成数据库文件在沙盒中的路径
     NSString *sqlPath = [docPath stringByAppendingPathComponent:@"noteDB.sqlite"];
@@ -89,7 +91,7 @@ static GKNoteDBM *_dbm = nil;
 -(void)createTable {
     
     if([_db open]){
-        NSString *sqlCreateTable = [NSString stringWithFormat:@"CREATE TABLE IF NOT EXISTS '%@'('%@' INTEGER PRIMARY KEY AUTOINCREMENT, '%@' TEXT NOT NULL, '%@' TEXT NOT NULL,'%@' TEXT NOT NULL,'%@' TEXT NOT NULL",DBNAME,DBID,DBTITLE,DBCONTENT,DBCREATE,DBUPDATE];
+        NSString *sqlCreateTable = [NSString stringWithFormat:@"CREATE TABLE IF NOT EXISTS '%@'('%@' INTEGER PRIMARY KEY AUTOINCREMENT, '%@' TEXT NOT NULL, '%@' TEXT NOT NULL,'%@' TimeStamp NOT NULL DEFAULT CURRENT_TIMESTAMP,'%@' TimeStamp NOT NULL DEFAULT CURRENT_TIMESTAMP)",DBNAME,DBID,DBTITLE,DBCONTENT,DBCREATE,DBUPDATE];
         
         BOOL res = [_db executeUpdate:sqlCreateTable];
         
@@ -112,6 +114,7 @@ static GKNoteDBM *_dbm = nil;
 
     NSString *sql = [NSString stringWithFormat:@"INSERT INTO '%@'(%@,%@,%@,%@) VALUES (?,?,?,?)",DBNAME,DBTITLE,DBCONTENT,DBCREATE,DBUPDATE];
     [_db executeUpdate:sql,note.title,note.content,note.createdDate,note.updatedDate];
+    
     
     [_db close];
 }
@@ -144,8 +147,8 @@ static GKNoteDBM *_dbm = nil;
         note.noteID = [res stringForColumn:DBID];
         note.title = [res stringForColumn:DBTITLE];
         note.content = [res stringForColumn:DBCONTENT];
-       // note.updatedDate = [res stringForColumn:DBUPDATE];
-       // note.createdDate = [res stringForColumn:DBCREATE];
+        note.updatedDate = [res dateForColumn:DBUPDATE];
+        note.createdDate = [res dateForColumn:DBCREATE];
         
         [dataArray addObject:note];
     }
