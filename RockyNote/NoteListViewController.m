@@ -13,6 +13,7 @@
 #import "NoteListCell.h"
 #import "NoteDetailViewController.h"
 #import "GKNoteDBM.h"
+#import "SetViewController.h"
 
 @interface NoteListViewController ()
 
@@ -27,7 +28,6 @@
     // Do any additional setup after loading the view.
     [self setupNavigationBar];
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
-
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(loadData) name:kNotificationCreateFile object:nil];
 }
@@ -41,6 +41,9 @@
 {
     UIBarButtonItem *item = [[UIBarButtonItem alloc]initWithImage:[UIImage imageNamed:@"ic_add_tab"] style:UIBarButtonItemStylePlain target:self action:@selector(createTask)];
     self.navigationItem.rightBarButtonItem = item;
+    
+    UIBarButtonItem *itemleft = [[UIBarButtonItem alloc]initWithTitle:@"设置" style:UIBarButtonItemStylePlain target:self action:@selector(setTask)];
+    self.navigationItem.leftBarButtonItem = itemleft;
     self.navigationItem.title = kAppName;
 }
 
@@ -48,6 +51,19 @@
 {
     _dataSource = [[GKNoteDBM sharedDataBase] getAllNote];
     [self.tableView reloadData];
+}
+
+-(void)setTask
+{
+    SetViewController *controller = [[SetViewController alloc]init];
+    [UIView beginAnimations:nil context:nil];
+    [UIView setAnimationDuration:0.8];
+    [UIView setAnimationTransition:UIViewAnimationTransitionFlipFromLeft forView:self.navigationController.view cache:NO];
+    
+    [self.navigationController pushViewController:controller animated:YES];
+    
+    [UIView commitAnimations];
+    
 }
 
 -(void)createTask
@@ -127,6 +143,11 @@
         [self.dataSource removeObjectAtIndex:indexPath.row];
         [self.tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
     }
+}
+
+-(NSString *)tableView:(UITableView *)tableView titleForDeleteConfirmationButtonForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return @"删除";
 }
 
 - (void)didReceiveMemoryWarning {

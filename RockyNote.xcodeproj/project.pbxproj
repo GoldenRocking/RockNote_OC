@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EC75CCA41E78D7D800ABA621 /* SetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC75CCA31E78D7D800ABA621 /* SetViewController.m */; };
+		EC75CCA61E7A3DEE00ABA621 /* colors.plist in Resources */ = {isa = PBXBuildFile; fileRef = EC75CCA51E7A3DEE00ABA621 /* colors.plist */; };
+		EC75CCA91E7A785E00ABA621 /* ThemeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EC75CCA81E7A785E00ABA621 /* ThemeManager.m */; };
 		ECB2B4F51E695D9400EAE841 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ECB2B4F41E695D9400EAE841 /* main.m */; };
 		ECB2B4F81E695D9400EAE841 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ECB2B4F71E695D9400EAE841 /* AppDelegate.m */; };
 		ECB2B4FB1E695D9400EAE841 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECB2B4FA1E695D9400EAE841 /* ViewController.m */; };
@@ -39,6 +42,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EC75CCA21E78D7D800ABA621 /* SetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetViewController.h; sourceTree = "<group>"; };
+		EC75CCA31E78D7D800ABA621 /* SetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetViewController.m; sourceTree = "<group>"; };
+		EC75CCA51E7A3DEE00ABA621 /* colors.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = colors.plist; sourceTree = "<group>"; };
+		EC75CCA71E7A785E00ABA621 /* ThemeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThemeManager.h; sourceTree = "<group>"; };
+		EC75CCA81E7A785E00ABA621 /* ThemeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThemeManager.m; sourceTree = "<group>"; };
 		ECB2B4F01E695D9400EAE841 /* RockyNote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RockyNote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECB2B4F41E695D9400EAE841 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		ECB2B4F61E695D9400EAE841 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -136,6 +144,7 @@
 				ECB2B5041E695D9400EAE841 /* Info.plist */,
 				ECB2B50A1E695DF900EAE841 /* Images.xcassets */,
 				ECB2B4F31E695D9400EAE841 /* Supporting Files */,
+				EC75CCA51E7A3DEE00ABA621 /* colors.plist */,
 			);
 			path = RockyNote;
 			sourceTree = "<group>";
@@ -158,6 +167,8 @@
 				ECB2B5351E6CFE3900EAE841 /* NoteListCell.m */,
 				ECB2B5371E6D393E00EAE841 /* NoteDetailViewController.h */,
 				ECB2B5381E6D393E00EAE841 /* NoteDetailViewController.m */,
+				EC75CCA21E78D7D800ABA621 /* SetViewController.h */,
+				EC75CCA31E78D7D800ABA621 /* SetViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -182,6 +193,8 @@
 				ECB2B5231E6978C500EAE841 /* GKNoteManager.m */,
 				ECB2B5641E6E914E00EAE841 /* GKNoteDBM.h */,
 				ECB2B5651E6E914E00EAE841 /* GKNoteDBM.m */,
+				EC75CCA71E7A785E00ABA621 /* ThemeManager.h */,
+				EC75CCA81E7A785E00ABA621 /* ThemeManager.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -305,6 +318,7 @@
 				ECB2B5601E6E8E0600EAE841 /* Info.plist in Resources */,
 				ECB2B5001E695D9400EAE841 /* Assets.xcassets in Resources */,
 				ECB2B5321E6CFB2400EAE841 /* edit_file@2x.png in Resources */,
+				EC75CCA61E7A3DEE00ABA621 /* colors.plist in Resources */,
 				ECB2B4FE1E695D9400EAE841 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -323,9 +337,11 @@
 				ECB2B55E1E6E8E0600EAE841 /* FMDatabaseQueue.m in Sources */,
 				ECB2B4F81E695D9400EAE841 /* AppDelegate.m in Sources */,
 				ECB2B4F51E695D9400EAE841 /* main.m in Sources */,
+				EC75CCA41E78D7D800ABA621 /* SetViewController.m in Sources */,
 				ECB2B5211E69707800EAE841 /* GKNote.m in Sources */,
 				ECB2B5391E6D393E00EAE841 /* NoteDetailViewController.m in Sources */,
 				ECB2B5241E6978C500EAE841 /* GKNoteManager.m in Sources */,
+				EC75CCA91E7A785E00ABA621 /* ThemeManager.m in Sources */,
 				ECB2B55F1E6E8E0600EAE841 /* FMResultSet.m in Sources */,
 				ECB2B5131E69623E00EAE841 /* UIColor+GKHex.m in Sources */,
 				ECB2B5361E6CFE3900EAE841 /* NoteListCell.m in Sources */,

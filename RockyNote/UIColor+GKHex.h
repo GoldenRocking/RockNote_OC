@@ -17,6 +17,8 @@
 
 +(UIColor *)systemDarkColor;
 
++(UIColor *)colorWithR:(CGFloat) red G:(CGFloat)green B:(CGFloat)blue A:(CGFloat)alpha;
+
 #pragma mark - Colors
 // System Colors
 + (instancetype)infoBlueColor;
@@ -136,5 +138,6 @@
 + (instancetype)mudColor;
 + (instancetype)siennaColor;
 + (instancetype)dustColor;
+
 
 @end

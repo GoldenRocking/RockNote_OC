@@ -13,6 +13,7 @@
 #import "GKNote.h"
 //#import "GKNoteManager.h"
 #import "GKNoteDBM.h"
+#import "ThemeManager.h"
 
 @interface AppDelegate ()
 
@@ -24,10 +25,11 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     [self addInitFileIfNeed];
+    [self setThemeColor];
     NoteListViewController *controller = [[NoteListViewController alloc]init];
     UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:controller];
     
-    [[UINavigationBar appearance] setBarTintColor:[UIColor systemColor]];
+   // [[UINavigationBar appearance] setBarTintColor:[UIColor systemColor]];
     [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
     NSDictionary *navbarTitleTextAttributes = [NSDictionary dictionaryWithObjectsAndKeys:
                                                [UIColor whiteColor],NSForegroundColorAttributeName,
@@ -38,6 +40,11 @@
     self.window.rootViewController = nav;
     [self.window makeKeyAndVisible];
     return YES;
+}
+
+-(void)setThemeColor
+{
+    [[ThemeManager sharedTheme] SetDefaultTheme];
 }
 
 -(void)addInitFileIfNeed
@@ -51,6 +58,7 @@
         [defaults synchronize];
         
     }
+    
 }
 
 

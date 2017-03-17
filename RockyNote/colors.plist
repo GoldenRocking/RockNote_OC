@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>colors</key>
+	<array>
+		<dict>
+			<key>name</key>
+			<string>violetColor</string>
+			<key>R</key>
+			<integer>191</integer>
+			<key>G</key>
+			<integer>95</integer>
+			<key>B</key>
+			<integer>255</integer>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>goldColor</string>
+			<key>R</key>
+			<integer>139</integer>
+			<key>G</key>
+			<integer>117</integer>
+			<key>B</key>
+			<integer>18</integer>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>peachColor</string>
+			<key>R</key>
+			<integer>242</integer>
+			<key>G</key>
+			<integer>187</integer>
+			<key>B</key>
+			<integer>97</integer>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>coffeeColor</string>
+			<key>R</key>
+			<integer>141</integer>
+			<key>G</key>
+			<integer>60</integer>
+			<key>B</key>
+			<integer>15</integer>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>blackColor</string>
+			<key>R</key>
+			<integer>0</integer>
+			<key>G</key>
+			<integer>0</integer>
+			<key>B</key>
+			<integer>0</integer>
+		</dict>
+	</array>
+</dict>
+</plist>
