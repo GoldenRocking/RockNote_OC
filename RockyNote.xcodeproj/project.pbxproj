@@ -21,7 +21,6 @@
 		ECB2B5131E69623E00EAE841 /* UIColor+GKHex.m in Sources */ = {isa = PBXBuildFile; fileRef = ECB2B5121E69623E00EAE841 /* UIColor+GKHex.m */; };
 		ECB2B51C1E69695800EAE841 /* GKConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = ECB2B51B1E69695800EAE841 /* GKConstants.m */; };
 		ECB2B5211E69707800EAE841 /* GKNote.m in Sources */ = {isa = PBXBuildFile; fileRef = ECB2B5201E69707800EAE841 /* GKNote.m */; };
-		ECB2B5241E6978C500EAE841 /* GKNoteManager.m in Sources */ = {isa = PBXBuildFile; fileRef = ECB2B5231E6978C500EAE841 /* GKNoteManager.m */; };
 		ECB2B5271E6CFB0A00EAE841 /* ic_add_tab@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ECB2B5261E6CFB0A00EAE841 /* ic_add_tab@2x.png */; };
 		ECB2B52C1E6CFB1700EAE841 /* micro_small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ECB2B5281E6CFB1700EAE841 /* micro_small@2x.png */; };
 		ECB2B52D1E6CFB1700EAE841 /* edit_image-50@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ECB2B5291E6CFB1700EAE841 /* edit_image-50@2x.png */; };
@@ -67,8 +66,6 @@
 		ECB2B51D1E6969B500EAE841 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		ECB2B51F1E69707800EAE841 /* GKNote.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKNote.h; sourceTree = "<group>"; };
 		ECB2B5201E69707800EAE841 /* GKNote.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKNote.m; sourceTree = "<group>"; };
-		ECB2B5221E6978C500EAE841 /* GKNoteManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKNoteManager.h; sourceTree = "<group>"; };
-		ECB2B5231E6978C500EAE841 /* GKNoteManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKNoteManager.m; sourceTree = "<group>"; };
 		ECB2B5261E6CFB0A00EAE841 /* ic_add_tab@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_add_tab@2x.png"; sourceTree = "<group>"; };
 		ECB2B5281E6CFB1700EAE841 /* micro_small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "micro_small@2x.png"; sourceTree = "<group>"; };
 		ECB2B5291E6CFB1700EAE841 /* edit_image-50@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "edit_image-50@2x.png"; sourceTree = "<group>"; };
@@ -189,8 +186,6 @@
 			children = (
 				ECB2B51F1E69707800EAE841 /* GKNote.h */,
 				ECB2B5201E69707800EAE841 /* GKNote.m */,
-				ECB2B5221E6978C500EAE841 /* GKNoteManager.h */,
-				ECB2B5231E6978C500EAE841 /* GKNoteManager.m */,
 				ECB2B5641E6E914E00EAE841 /* GKNoteDBM.h */,
 				ECB2B5651E6E914E00EAE841 /* GKNoteDBM.m */,
 				EC75CCA71E7A785E00ABA621 /* ThemeManager.h */,
@@ -340,7 +335,6 @@
 				EC75CCA41E78D7D800ABA621 /* SetViewController.m in Sources */,
 				ECB2B5211E69707800EAE841 /* GKNote.m in Sources */,
 				ECB2B5391E6D393E00EAE841 /* NoteDetailViewController.m in Sources */,
-				ECB2B5241E6978C500EAE841 /* GKNoteManager.m in Sources */,
 				EC75CCA91E7A785E00ABA621 /* ThemeManager.m in Sources */,
 				ECB2B55F1E6E8E0600EAE841 /* FMResultSet.m in Sources */,
 				ECB2B5131E69623E00EAE841 /* UIColor+GKHex.m in Sources */,

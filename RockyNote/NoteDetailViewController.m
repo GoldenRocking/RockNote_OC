@@ -23,8 +23,6 @@ static const CGFloat kVoiceButtonWidth = 100;
     UITextField *_titleTextField;
     UITextView *_contentTextView;
     
-    UIButton *_voiceButton;
-    BOOL _isEditingTitle;
 }
 @end
 
@@ -74,7 +72,7 @@ static const CGFloat kVoiceButtonWidth = 100;
 -(void)initComps
 {
     CGRect frame = CGRectMake(kHorizontalMargin, kViewOriginY, self.view.frame.size.width - kHorizontalMargin * 2, kTextFieldHeight);
-    
+    /*
     UIBarButtonItem *doneBarButton = [[UIBarButtonItem alloc]initWithTitle:@"Done" style:UIBarButtonItemStylePlain target:self action:@selector(hideKeyboard)];
     doneBarButton.width = ceilf(self.view.frame.size.width) / 3 - 30;
     
@@ -84,6 +82,8 @@ static const CGFloat kVoiceButtonWidth = 100;
     UIToolbar *toolbar = [[UIToolbar alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, kToolbarHeight)];
     toolbar.tintColor = [UIColor systemColor];
     toolbar.items = [NSArray arrayWithObjects:doneBarButton,voiceBarButton,nil];
+     
+     */
     
     _titleTextField = [[UITextField alloc]initWithFrame:frame];
     if(_note)
@@ -95,7 +95,7 @@ static const CGFloat kVoiceButtonWidth = 100;
     }
     
     _titleTextField.textColor = [UIColor systemDarkColor];
-    _titleTextField.inputAccessoryView = toolbar;
+   // _titleTextField.inputAccessoryView = toolbar;
     [self.view addSubview:_titleTextField];
     
     UIView *lineView = [[UIView alloc] initWithFrame:CGRectMake(kHorizontalMargin, kViewOriginY + kTextFieldHeight, self.view.frame.size.width - kHorizontalMargin, 1)];
@@ -116,9 +116,10 @@ static const CGFloat kVoiceButtonWidth = 100;
     {
         _contentTextView.text = _note.content;
     }
-    _contentTextView.inputAccessoryView = toolbar;
+   // _contentTextView.inputAccessoryView = toolbar;
     [self.view addSubview:_contentTextView];
     
+    /*
     _voiceButton = [UIButton buttonWithType:UIButtonTypeCustom];
     [_voiceButton setFrame:CGRectMake((self.view.frame.size.width - kVoiceButtonWidth) / 2, self.view.frame.size.height - kVoiceButtonWidth - kVerticalMargin, kVoiceButtonWidth, kVoiceButtonWidth)];
     [_voiceButton setTitle:@"语音输入" forState:UIControlStateNormal];
@@ -128,6 +129,7 @@ static const CGFloat kVoiceButtonWidth = 100;
     [_voiceButton setBackgroundColor:[UIColor systemColor]];
     [_voiceButton setTintColor:[UIColor whiteColor]];
     [self.view addSubview:_voiceButton];
+     */
 }
 
 -(void)useVoiceInput
@@ -168,13 +170,13 @@ static const CGFloat kVoiceButtonWidth = 100;
 {
     if([_titleTextField isFirstResponder])
     {
-        _isEditingTitle = YES;
+        //_isEditingTitle = YES;
         [_titleTextField resignFirstResponder];
     }
     
     if([_contentTextView isFirstResponder])
     {
-        _isEditingTitle = NO;
+        //_isEditingTitle = NO;
         [_contentTextView resignFirstResponder];
     }
 }

@@ -102,7 +102,7 @@
     
     CALayer *border = [CALayer layer];
     border.backgroundColor = [UIColor whiteColor].CGColor;
-    border.frame = CGRectMake(0, cell.contentView.frame.size.height - 5, cell.contentView.frame.size.width, 5);
+    border.frame = CGRectMake(0, cell.contentView.frame.size.height - 5, self.view.frame.size.width, 5);
     [cell.contentView.layer addSublayer:border];
   
     return cell;
